@@ -1,0 +1,12 @@
+[data-theme='dark'] {
+  --color-text-primary: var(--c-beige);
+  --color-text-inverse: var(--c-beige);
+  --color-text-accent: var(--c-brown);
+
+  --color-bg-page: var(--c-black);
+  --color-bg-container: var(--c-dark);
+  --color-bg-overlay: rgb(41 40 38 / 0.8); 
+
+  --color-border-primary: var(--c-brown-dark);
+  --color-border-inverse: var(--c-tan);
+}
