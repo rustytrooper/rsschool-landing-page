@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+  rel="stylesheet"
+/>
+ <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <title>Resource cafe</title>
+    <script>
+  (function () {
+    const saved = localStorage.getItem('theme');
+    const theme = saved === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', 'dark');  
+  })();
+</script>
+</head>
+<body>
+    <div id="header-root"></div>
+      <main>
+    <div id="catalog-root"></div>
+  </main>
+    <div id="footer-root"></div>
+    <script type="module" src="/src/pages/catalog.js"></script>
+</body>
+</html>

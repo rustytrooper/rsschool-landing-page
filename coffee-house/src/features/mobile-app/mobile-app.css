@@ -1,0 +1,135 @@
+.mobile-app {
+  padding-block: var(--space-100, 100px);
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: -250px;
+}
+
+.mobile-app__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-64);
+  align-items: center;
+}
+
+.mobile-app__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-40);
+}
+
+.mobile-app__title {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  font-weight: var(--fw-semibold);
+}
+
+.mobile-app__text {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: var(--fw-regular);
+  max-width: 540px;
+}
+
+.mobile-app__stores {
+  display: flex;
+  gap: var(--space-20);
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding: var(--space-12) var(--space-20);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.store-btn:hover {
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-page);
+  border-color: var(--color-text-primary);
+}
+
+.store-btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.store-btn__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.store-btn__prefix {
+  font-size: 10px;
+  font-weight: var(--fw-regular);
+}
+
+.store-btn__label {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+}
+
+.mobile-app__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-app__image {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .mobile-app {
+    padding-block: var(--space-80);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .mobile-app__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-40);
+  }
+
+  .mobile-app__content {
+    align-items: stretch;
+    gap: var(--space-24);
+  }
+
+  .mobile-app__text {
+    max-width: 100%;
+  }
+
+  .mobile-app__image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-app {
+    padding-block: var(--space-64);
+  }
+
+  .mobile-app__inner {
+    gap: var(--space-32);
+  }
+
+  .mobile-app__stores {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-12);
+  }
+}
