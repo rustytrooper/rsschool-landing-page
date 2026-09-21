@@ -76,8 +76,6 @@
   }
 }
 
-
-
 @media (max-width: 480px) {
   .about {
     padding-block: var(--space-64);

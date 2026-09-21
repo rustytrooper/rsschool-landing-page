@@ -1,5 +1,5 @@
 .catalog {
-  padding-block: var(--space-100, 100px);
+  padding-block: var(--space-50, 50px);
   margin-left: 40px;
   margin-right: 40px;
 }

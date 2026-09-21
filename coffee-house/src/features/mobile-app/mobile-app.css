@@ -2,6 +2,7 @@
   padding-block: var(--space-100, 100px);
   margin-right: 40px;
   margin-left: 40px;
+  margin-top: -250px;
 }
 
 .mobile-app__inner {

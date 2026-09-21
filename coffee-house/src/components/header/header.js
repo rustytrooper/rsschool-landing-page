@@ -10,8 +10,10 @@ const NAV_LINKS = [
 
 export function renderHeader({ currentPage = 'home' } = {}) {
   const isHome = currentPage === 'home';
+
   const anchorPrefix = isHome ? '' : 'index.html';
-  const catalogHref = isHome ? 'catalog.html' : '#';
+
+  const menuHref = isHome ? 'catalog.html' : 'index.html';
 
   const navItems = NAV_LINKS.map(
     ({ id, label }) => `
@@ -22,7 +24,7 @@ export function renderHeader({ currentPage = 'home' } = {}) {
   ).join('');
 
   return `
-    <header class="header header--${isHome ? 'home' : 'catalog'}">
+    <header class="header">
       <div class="container header__inner">
         <a class="header__logo" href="${isHome ? '#' : 'index.html'}" aria-label="Resource Coffee House — на главную">
           <img
@@ -47,7 +49,7 @@ export function renderHeader({ currentPage = 'home' } = {}) {
         <div class="header__actions">
           ${renderThemeToggle()}
 
-          <a class="header__menu-btn" href="${catalogHref}">
+          <a class="header__menu-btn" href="${menuHref}">
             <span>Menu</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.167 9.76667V11.6667C14.167 14.8883 11.5553 17.5 8.33366 17.5C5.112 17.5 2.50033 14.8883 2.50033 11.6667V9.76667C2.50033 9.4353 2.76896 9.16667 3.10033 9.16667H13.567C13.8984 9.16667 14.167 9.4353 14.167 9.76667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

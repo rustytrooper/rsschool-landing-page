@@ -14,7 +14,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  color: inherit;
+  color: var(--c-brown-dark);
   opacity: 0.4;
   transition: opacity 0.3s ease, background-color 0.3s ease;
 }
