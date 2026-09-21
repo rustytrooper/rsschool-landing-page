@@ -52,3 +52,12 @@ body {
   line-height: var(--lh-caption);
   font-weight: var(--fw-semibold);
 }
+
+img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}

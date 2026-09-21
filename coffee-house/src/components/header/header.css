@@ -5,6 +5,8 @@
   right: 0;
   z-index: 10;
   padding-block: var(--space-20);
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .header--home {
@@ -115,5 +117,46 @@
 
   .header__burger {
     display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__nav,
+  .header__menu-btn {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+
+  .header__logo-img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding-block: var(--space-12);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .header__logo-img {
+    height: 50px;
+  }
+
+  .theme-toggle {
+    padding: 2px;
+  }
+
+  .theme-toggle__btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .theme-toggle__btn svg {
+    width: 18px;
+    height: 18px;
   }
 }

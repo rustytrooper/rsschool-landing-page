@@ -1,5 +1,7 @@
 .footer {
   margin-top: var(--space-120); 
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .footer__inner {
@@ -88,3 +90,51 @@ a.footer__contact:hover {
   color: var(--color-text-inverse);
 }
 
+@media (max-width: 768px) {
+  .footer {
+    margin-top: var(--space-80);
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-40);
+    padding: var(--space-64);
+    min-height: auto;
+    align-content: start;
+  }
+
+  .footer__left,
+  .footer__right {
+    justify-content: flex-start;
+    gap: var(--space-32);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    margin-top: var(--space-64);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .footer__inner {
+    padding: var(--space-24);
+    gap: var(--space-32);
+    border-radius: var(--radius-24);
+  }
+
+  .footer__left,
+  .footer__right {
+    gap: var(--space-24);
+  }
+
+  .footer__social {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__social svg {
+    width: 20px;
+    height: 20px;
+  }
+}

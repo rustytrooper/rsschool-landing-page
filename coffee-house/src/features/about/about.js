@@ -22,12 +22,14 @@ const IMAGES = [
 export function renderAbout() {
   const imagesHtml = IMAGES.map(
     ({ src, alt }, i) => `
+    <div class="card__img-wrapper">
       <img
         class="about__img about__img--${i + 1}"
         src="${src}"
         alt="${alt}"
         loading="lazy"
       />
+      </div>
     `,
   ).join('');
 

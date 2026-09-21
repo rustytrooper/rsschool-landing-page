@@ -1,5 +1,7 @@
 .mobile-app {
   padding-block: var(--space-100, 100px);
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .mobile-app__inner {
@@ -87,4 +89,46 @@
   height: auto;
   max-width: 600px;
   object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .mobile-app {
+    padding-block: var(--space-80);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .mobile-app__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-40);
+  }
+
+  .mobile-app__content {
+    align-items: stretch;
+    gap: var(--space-24);
+  }
+
+  .mobile-app__text {
+    max-width: 100%;
+  }
+
+  .mobile-app__image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-app {
+    padding-block: var(--space-64);
+  }
+
+  .mobile-app__inner {
+    gap: var(--space-32);
+  }
+
+  .mobile-app__stores {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-12);
+  }
 }
