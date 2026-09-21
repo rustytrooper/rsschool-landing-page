@@ -9,10 +9,13 @@ import { renderHero } from '../features/hero/hero.js';
 import { renderSlider } from '../features/slider/slider.js';
 import { renderAbout } from '../features/about/about.js';
 import { renderMobileApp } from '../features/mobile-app/mobile-app.js';
+import { initThemeToggle } from '../components/theme-toggle/theme-toggle.js';
 
 document.querySelector('#header-root').innerHTML = renderHeader({
   currentPage: 'home',
 });
+
+initThemeToggle();
 
 document.querySelector('#hero-root').innerHTML = renderHero();
 
